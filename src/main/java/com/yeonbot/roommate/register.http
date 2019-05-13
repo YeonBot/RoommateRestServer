@@ -1,0 +1,9 @@
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1109",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
