@@ -43,6 +43,7 @@ public class MemberControllerTest {
         request.setMemberId("tjddus1108");
         request.setPassword("1234");
 
+        //ObjectMapper -> JSON 위한 객체
         ObjectMapper om = new ObjectMapper();
 
         mvc.perform(post("/member/login")
