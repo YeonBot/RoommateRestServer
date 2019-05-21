@@ -40,7 +40,7 @@ public class MemberControllerTest {
     @Test
     public void loginTest() throws Exception {
         AuthenticationRequest request = new AuthenticationRequest();
-        request.setMemberId("tjddus1108");
+        request.setMemberId("tjddus1109");
         request.setPassword("1234");
 
         //ObjectMapper -> JSON 위한 객체

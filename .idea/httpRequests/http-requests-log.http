@@ -1,0 +1,362 @@
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1109",
+  "password":"1234"
+}
+
+<> 2019-05-22T120451.200.json
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1109",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/room/test
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-21T091443.403.json
+
+###
+
+POST http://localhost:8080/room/test
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-21T091335.403.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-21T091211.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-21T091135.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-21T091037.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-13T125532.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"123"
+}
+
+<> 2019-05-13T125524.403.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus110",
+  "password":"1234"
+}
+
+<> 2019-05-13T125501.403.json
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1109",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-12T021031.200.json
+
+###
+
+POST http://localhost:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1108",
+  "password":"1234"
+}
+
+<> 2019-05-12T020003.200.json
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+<> 2019-05-12T014603.403.json
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"password":"123"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"password":"123"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"password":"1234"
+}
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/member/register?${_csrf.parameterName}=${_csrf.toke}
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+<> 2019-05-06T044141.403.json
+
+###
+
+POST http://localhost:8080/member/register&${_csrf.parameterName}=${_csrf.toke}
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/member/register${_csrf.parameterName}=${_csrf.toke}
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+<> 2019-05-06T043345.403.json
+
+###
+
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+<> 2019-05-06T042836.403.json
+
+###
+
+POST http://localhost:8080/member/member
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+<> 2019-05-06T042210.403.json
+
+###
+
+POST http://localhost:8080/member
+Content-Type: application/json
+
+{
+"memberId":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://localhost:8080/member
+Content-Type: application/json
+
+{
+"memberID":"tjddus1108",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+<> 2019-05-06T025512.500.json
+
+###
+
+POST http://localhost
+
+###
+
+GET https://www.devbeginner.com
+
+<> 2019-05-06T025118.200.html
+
+###
+

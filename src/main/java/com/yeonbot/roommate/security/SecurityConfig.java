@@ -13,8 +13,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.session.web.http.HeaderHttpSessionStrategy;
-import org.springframework.session.web.http.HttpSessionStrategy;
+//import org.springframework.session.web.http.HeaderHttpSessionStrategy;
+//import org.springframework.session.web.http.HttpSessionStrategy;
 
 // WebSecurityConfigurerAdapter를 상속받은 spring security 의
 // filter Chain 을 거쳐서, 인증 권한 등 이 클래스에서 지정한대로 수행한다.
@@ -68,10 +68,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
-    // HttpSession 전략으로 쿠키의 세션을 사용하는 대신 header에 'x-auth-token' 값을 사용할 수 있게 해준다.
-    @Bean
-    public HttpSessionStrategy httpSessionStrategy() {
-        return new HeaderHttpSessionStrategy();
-    }
+//    // HttpSession 전략으로 쿠키의 세션을 사용하는 대신 header에 'x-auth-token' 값을 사용할 수 있게 해준다.
+//    @Bean
+//    public HttpSessionStrategy httpSessionStrategy() {
+//        return new HeaderHttpSessionStrategy();
+//    }
 
 }

@@ -9,6 +9,8 @@ POST http://localhost:8080/member/login
 Content-Type: application/json
 
 {
-  "memberId":"tjddus1108",
+  "memberId":"tjddus1109",
   "password":"1234"
 }
+
+###
