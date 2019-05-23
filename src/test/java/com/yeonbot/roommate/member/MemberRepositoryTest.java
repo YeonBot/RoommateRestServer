@@ -1,15 +1,10 @@
 package com.yeonbot.roommate.member;
 
 import org.junit.After;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -27,36 +22,36 @@ public class MemberRepositoryTest {
         memberRepository.deleteAll();
     }
 
-    @Test
-    public void 회원가입() {
-        //given
-
-        for(int i=0; i<100; i++) {
-
-            MemberRole role = new MemberRole();
-            if(i <= 80) {
-                role.setRoleName("BASIC");
-            }else if(i <= 90) {
-                role.setRoleName("MANAGER");
-            }else {
-                role.setRoleName("ADMIN");
-            }
-
-            memberRepository.save(Member.builder()
-                    .memberId("id"+i)
-                    .memberPassword("pw"+i)
-                    .memberEmail("email"+i)
-                    .memberGender("남성"+i)
-                    .roles(Arrays.asList(role))
-                    .build());
-        }
-
-        //when
-        List<Member> memberList = memberRepository.findAll();
-
-        //then
-        Optional<Member> result = Optional.ofNullable(memberList.get(85));
-    }
+//    @Test
+//    public void 회원가입() {
+//        //given
+//
+//        for(int i=0; i<100; i++) {
+//
+//            MemberRole role = new MemberRole();
+//            if(i <= 80) {
+//                role.setRoleName("BASIC");
+//            }else if(i <= 90) {
+//                role.setRoleName("MANAGER");
+//            }else {
+//                role.setRoleName("ADMIN");
+//            }
+//
+//            memberRepository.save(Member.builder()
+//                    .memberId("id"+i)
+//                    .memberPassword("pw"+i)
+//                    .memberEmail("email"+i)
+//                    .memberGender("남성"+i)
+//                    .roles(Arrays.asList(role))
+//                    .build());
+//        }
+//
+//        //when
+//        List<Member> memberList = memberRepository.findAll();
+//
+//        //then
+//        Optional<Member> result = Optional.ofNullable(memberList.get(85));
+//    }
 
 
 }

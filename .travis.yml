@@ -1,0 +1,23 @@
+language: java
+
+jdk:
+  - openjdk8
+
+# master branch에 push 될때만 ci
+branches:
+  only:
+    - master
+
+# Travis CI 서버의 Home
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
+script: "./gradlew clean build"
+
+# CI 실행 완료시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - tjddus1109@gmail.com
