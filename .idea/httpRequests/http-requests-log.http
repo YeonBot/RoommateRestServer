@@ -1,3 +1,27 @@
+POST http://localhost:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1109",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
+POST http://52.78.201.246:8080/member/register
+Content-Type: application/json
+
+{
+"memberId":"tjddus1109",
+"memberPassword":"1234",
+"memberEmail":"tjddus1109@navr.com",
+"memberGender":"남성"
+}
+
+###
+
 POST http://localhost:8080/member/login
 Content-Type: application/json
 
