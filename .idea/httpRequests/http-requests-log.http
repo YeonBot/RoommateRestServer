@@ -1,3 +1,101 @@
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+###
+
+POST http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+<> 2019-05-27T064846.405.json
+
+###
+
+POST http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+<> 2019-05-27T064734.403.json
+
+###
+
+POST http://52.78.201.246:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1109",
+  "password":"1234"
+}
+
+<> 2019-05-27T064726.200.json
+
+###
+
+POST http://localhost:8080/room/Rooms
+Content-Type: application/json
+
+{
+}
+
+<> 2019-05-27T064716.403.json
+
+###
+
 POST http://52.78.201.246:8080/member/login
 Content-Type: application/json
 
