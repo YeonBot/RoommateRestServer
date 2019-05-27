@@ -1,34 +1,30 @@
 package com.yeonbot.roommate.roomPreView;
 
-import lombok.AllArgsConstructor;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
 import java.util.Iterator;
 
-@RestController
-@AllArgsConstructor
-@RequestMapping("/room")
-public class RoomController {
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class RoomControllerTest {
 
     @Autowired
     RoomRepository roomRepository;
 
-    @RequestMapping("/test")
-    public String hello(){
-        return "Hello Wrold !";
-    }
-
-    @RequestMapping("/crawling")
-    public void crawlingTest(){
-        int count = 1;
+    @Test
+    public void jsoup(){
         try {
+            int count = 0;
             Document doc = Jsoup.connect("https://www.thecomenstay.com/brand/sharehouse-woozoo").get();
 
             Elements elements = doc.select("div.brand-house-info");
@@ -36,6 +32,12 @@ public class RoomController {
             for (Element element: elements) {
                 Iterator<Element> iterElem =element.select("div div.cell3").iterator();
 
+//                String[] items = new String[] { "위치", "교통", "월세", "보증금", "입주조건"};
+//                StringBuilder builder = new StringBuilder();
+//                for (String item : items) {
+//                    builder.append(item + ": " + iterElem.next().text() + " \t");
+//                }
+//                System.out.println(builder.toString());
                 Room room = Room.builder()
                         .roomNumber(""+count)
                         .location(iterElem.next().text())
@@ -46,21 +48,11 @@ public class RoomController {
                         .build();
 
                 roomRepository.save(room);
-
-//                String[] items = new String[] { "위치", "교통", "월세", "보증금", "입주조건"};
-//                StringBuilder builder = new StringBuilder();
-//                for (String item : items) {
-//                    builder.append(item + ": " + iterElem.next().text() + " \t");
-//                }
-//                System.out.println(builder.toString());
-
+                count++;
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-
-
 }

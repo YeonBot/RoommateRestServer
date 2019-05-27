@@ -1,3 +1,35 @@
+POST http://52.78.201.246:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1109",
+  "password":"1234"
+}
+
+<> 2019-05-23T033924.200.json
+
+###
+
+POST http://52.78.201.246/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1109",
+  "password":"1234"
+}
+
+###
+
+POST http://52.78.201.246:8080/member/login
+Content-Type: application/json
+
+{
+  "memberId":"tjddus1109",
+  "password":"1234"
+}
+
+###
+
 POST http://localhost:8080/member/register
 Content-Type: application/json
 
